@@ -1,6 +1,6 @@
 window.onload =  function(){
 
-    const config = {
+    var config = {
         type: Phaser.AUTO,
         width: 900,
         height: 600,
@@ -12,7 +12,7 @@ window.onload =  function(){
                 debug: true,
             }
         },
-        scene: [Scene00, Scene01, Scene02, SceneGameOver]
+        scene: [Scene00, Scene01, Scene02, SceneQuiz, SceneAcerto, SceneErro, SceneGameOver]
     }
     let game  = new Phaser.Game(config);
    

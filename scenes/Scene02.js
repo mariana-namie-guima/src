@@ -91,12 +91,15 @@ class Scene02 extends Phaser.Scene{
         maquina1 = this.physics.add.staticImage(700,500, 'maquina').setSize(140, 170).setScale(0.5);
         this.physics.add.collider(player,maquina1, () =>{
             playernoChao = true;
+            this.scene.stop('Scene02');
+            this.scene.start('SceneQuiz');
         });
         this.physics.add.collider(bacteria,maquina1);
 
         maquina2 = this.physics.add.staticImage(2000,500, 'maquina').setSize(140,170).setScale(0.5);
         this.physics.add.collider(player,maquina2, () =>{
             playernoChao = true;
+            
         });
         this.physics.add.collider(bacteria,maquina2);
     };

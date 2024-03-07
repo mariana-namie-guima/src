@@ -1,5 +1,5 @@
 class Scene00 extends Phaser.Scene {
-    constructor(){
+    constructor() {
         super({key: "Scene00"});
     };
 
@@ -18,6 +18,7 @@ class Scene00 extends Phaser.Scene {
         this.createParallax(4, 'bgMaquina', 0.4);
         this.createParallax(4, 'bgSorvete', 0);
         this.pressBotao('bntComecar');
+        this.add.text(210, 130, 'UNILEVEL', {fill: '#000000', fontSize: '100px', setFontFamily: 'Baloo Bhai 2 ExtraBold', strokeThickness: 6})
     }
 
     pressBotao(image) {
